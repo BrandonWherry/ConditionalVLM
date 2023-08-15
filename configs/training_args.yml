@@ -1,0 +1,24 @@
+model_args:
+  model_name_or_path: Salesforce/instructblip-vicuna-13b
+
+data_args:
+  train_data_path: ../data/serialized_moderator_instruct_data.json
+  images_path: ../data/coco/images
+
+training_args:
+  output_dir: ../training_output
+  num_train_epochs: 2
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 4
+  evaluation_strategy: "no"
+  save_strategy: "epoch"
+  save_total_limit: 4
+  learning_rate: 0.00005
+  weight_decay: 0.05
+  warmup_steps: 1000
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  fp16: true
+  lr_scheduler_type: 'cosine'
+  deepspeed: "../configs/ds_config_stage2.json"

@@ -1,0 +1,29 @@
+# Select the Model To be used, currently supported baseline models listed below
+# Salesforce/instructblip-vicuna-7b
+# Salesforce/instructblip-vicuna-13b
+# Salesforce/instructblip-flan-t5-xl
+# Salesforce/instructblip-flan-t5-xxl
+# checkpoint-843
+# checkpoint-1686
+use_testsplit: True
+use_step1_for_metrics: False
+load_from_checkpoint: True
+
+model_name_or_path: checkpoint-1686
+base_model : Salesforce/instructblip-vicuna-13b
+checkpoint_path: /workspace/storage/ModeratorBLIP/training_output
+metrics_output_name: ModeratorVLM_checkpoint-1686
+
+output_folder_testsplit: ../data_scripts/instruct_data_generation_steps_testsplit
+output_folder_trainsplit: ../data_scripts/instruct_data_generation_steps_trainsplit
+output_folder_metrics: ../data_scripts/metrics
+step0_basename_output: step0.json
+step1_basename_output: step1_instruct_data_needs_annotation.json
+step2_basename_output: step2_moderator_instruct_data.json
+metric_folder: ../data_scripts/metrics
+data_path: ../data
+
+
+# Exclusive Step 0 - Config
+images_per_split: 100
+generate_testsplit: True
