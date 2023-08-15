@@ -186,3 +186,4 @@ OFA-large/
 !data_scripts/metrics/*
 !data_scripts/vlm_testing/json_and_cse_outputs/*
 CSE/
+CSE*
