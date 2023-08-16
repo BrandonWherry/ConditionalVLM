@@ -1,3 +1,1 @@
-# This folder contains 4 scripts needed to auto-generate the instruct data.
-
-The 4 scripts create a pipeline, meant to be ran in their numerical order.
+# This folder contains VLM inferencing code, and data preprocessing scripts needed to parse and score VLM output jsons
