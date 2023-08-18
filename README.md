@@ -30,7 +30,7 @@ modify the classifier’s output based on attribution score. Our
 evaluations show our algorithms can categorize three unsafe
 categories of images with an accuracy of 93.9%, and mini-
 mally segment only the unsafe regions with an accuracy of
-81.8%. test
+81.8%.
 
 
 # Environment Setup

@@ -176,7 +176,6 @@ ofa_env
 data/*
 Llama*
 OFA-large/
-!samples/*
 !data/serialized_moderator_instruct_data.json
 !data/README.md
 !configs/*
