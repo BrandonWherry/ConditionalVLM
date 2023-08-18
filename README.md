@@ -6,7 +6,7 @@ Social media platforms are being increasingly used by malicious actors to share 
 image classifiers to provide an accurate rationale grounded in unsafe image attributes, and then proposing a counterfactual
 explanation algorithm that minimally identifies and obfuscates unsafe regions for safe viewing, by first utilizing an unsafe image classifier attribution matrix to guide segmentation for a more optimal subregion segmentation followed by an informed greedy search to determine the minimum number of subregions required to modify the classifier’s output based on attribution score. Extensive experiments on uncurated data from social networks emphasize the efficacy of our proposed method. We make our code available at: https://anonymous.4open.science/r/ConditionalVLM-E405/README.md.
 
-![COnditional VLM](./assets/image.png)
+![Conditional VLM](./assets/image.png)
 
 
 # Environment Setup
